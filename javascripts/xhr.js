@@ -1,8 +1,8 @@
-//**********//XHR//**********//
 
-var petFood = function(object) {
+//**********//XHR//**********//
+var xhr = function() {
 		
-	//CALL BACK FOR  REQUESTS LOAD EVENT LISTENERS//
+	//CALL BACK FOR DOG FOOD XHR REQUEST LOAD EVENT LISTENERS//
 	var addDogFoodXhr = function () {
 
 		//PARSES THE XHR RESPONSE TEXT TO CREATE ARRAY OF OBJECTS//
@@ -13,10 +13,11 @@ var petFood = function(object) {
 			petFood.setDogFoodItem(pojo.dogBrands[i], "push");
 		};
 
+		//CALLS HTML BUILDER WITH ARGUMENT OF DOG FOOD ARRAY//
 		petFood.htmlBuilder(petFood.getDogFoodArray(), "dog");
 	};
 
-	//CALL BACK FOR SONG AND LOAD MORE REQUESTS LOAD EVENT LISTENERS//
+	//CALL BACK FOR CAT FOOD XHR REQUEST LOAD EVENT LISTENERS//
 	var addCatFoodXhr = function () {
 
 		//PARSES THE XHR RESPONSE TEXT TO CREATE ARRAY OF OBJECTS//
@@ -27,10 +28,11 @@ var petFood = function(object) {
 			petFood.setCatFoodItem(pojo.catBrands[i], "push");
 		};
 
+		//CALLS HTML BUILDER WITH ARGUMENT OF CAT FOOD ARRAY//
 		petFood.htmlBuilder(petFood.getCatFoodArray(), "cat");
 	};
 
-	//INITIAL XHR REQUEST//
+	//DOG FOOD XHR REQUEST//
 	var loadDogFood = function() {
 
 		//CREATES A NEW XHR REQUEST//
@@ -47,7 +49,7 @@ var petFood = function(object) {
 		loadRequest.send();
 	}();
 
-		//INITIAL XHR REQUEST//
+	//CAT FOOD XHR REQUEST//
 	var loadCatFood = function() {
 
 		//CREATES A NEW XHR REQUEST//
@@ -63,9 +65,6 @@ var petFood = function(object) {
 		loadRequest.open("GET", "../json/catFood.json");
 		loadRequest.send();
 	}();
-
-	//RETURNS OBJECT WITH NEW METHOD ATTACHED//	
-	return object;	
-
+	
 //INVOKES FUNCTION WITH EMPTY OBJECT IF LIST MUSIC HAS NOT YET INITIALIZED//
-}(petFood || {});
+}();

@@ -1,3 +1,6 @@
+/**************\
+ General Styles
+\**************/
 * {
 	box-sizing: border-box;
 	list-style: none;
@@ -9,6 +12,9 @@ body {
 	min-width: 500px;
 }
 
+/******\
+ HEADER
+\******/
 #header	{
 	border: 1px solid black;
 	margin: 2.5% 5%;
@@ -34,6 +40,9 @@ body {
 
 }
 
+/******************\
+ PRODUCTS LIST INFO
+\******************/
 .foodAnimal {
 	border: 1px solid black;
 	margin: 2.5% 5%;
