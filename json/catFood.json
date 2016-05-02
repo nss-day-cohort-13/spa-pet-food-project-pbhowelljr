@@ -1,7 +1,7 @@
 {
   "catBrands": [
     {
-      "name": "Purina",
+      "name": "Purrina",
       "breeds": ["Siamese", "Bengal", "Snowshoe", "Munchkin"],
       "types": [
         {

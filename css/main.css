@@ -9,17 +9,55 @@ body {
 	min-width: 500px;
 }
 
+#header	{
+	border: 1px solid black;
+	margin: 2.5% 5%;
+	background-color: darkseagreen;
+}
+
+#header li {
+	/* display: inline-block; */
+	float: left;
+	width: 50%;
+	margin-left: 5%;
+}
+
+#nav li {
+	display: inline-block;
+	width: 20%;
+	margin: 9px 0;
+	text-align: right;
+}
+
+#blank {
+	clear: both;
+
+}
+
+.foodAnimal {
+	border: 1px solid black;
+	margin: 2.5% 5%;
+	background-color: mediumseagreen;
+}
+
+.foodAnimal li {
+	margin: 2.5% 10% 0;
+}
+
 .foodBrand {
 	display: inline-block;
 	width: 90%;
-	border: 1px solid black;
-	margin-left: 5%;
+	margin: 0 0 5% 5%;
+}
+
+.foodBrand h2 {
+	margin: 0;
 }
 
 .foodType {
 	display: inline-block;
-	width: 42.5%;
-	margin-left: 5%;
+	width: 32.5%;
+	margin-left: 10%;
 }
 
 .volumesPrices li{
