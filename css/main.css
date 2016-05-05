@@ -37,7 +37,6 @@ body {
 
 #blank {
 	clear: both;
-
 }
 
 /******************\
@@ -70,7 +69,6 @@ body {
 }
 
 .volumesPrices li{
-
 	display: inline-block;
 	width: 15%;
 	margin-left: 5%;
