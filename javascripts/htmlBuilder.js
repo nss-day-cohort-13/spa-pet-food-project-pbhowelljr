@@ -1,6 +1,6 @@
 
 //**********//HTML BUILDER//**********//
-var petFood = function(object) {
+var petFood = (function(object) {
 	
 	//DECLARES VARIABLE FOR OUTPUT DOM ELEMENT//
 	var mainContent = document.getElementById("mainContent");
@@ -50,4 +50,4 @@ var petFood = function(object) {
 	return object;	
 
 //INVOKES FUNCTION WITH EMPTY OBJECT IF LIST MUSIC HAS NOT YET INITIALIZED//
-}(petFood || {});
+})(petFood || {});

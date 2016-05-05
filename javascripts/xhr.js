@@ -1,6 +1,6 @@
 
 //**********//XHR//**********//
-var xhr = function() {
+var xhr = (function() {
 		
 	//CALL BACK FOR DOG FOOD XHR REQUEST LOAD EVENT LISTENERS//
 	var addDogFoodXhr = function () {
@@ -65,6 +65,5 @@ var xhr = function() {
 		loadRequest.open("GET", "../json/catFood.json");
 		loadRequest.send();
 	}();
-	
-//INVOKES FUNCTION WITH EMPTY OBJECT IF LIST MUSIC HAS NOT YET INITIALIZED//
-}();
+
+})();

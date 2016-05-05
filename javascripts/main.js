@@ -1,6 +1,6 @@
 
 //**********//MAIN//**********//
-var petFood = function(object) {
+var petFood = (function(object) {
 	
 	//ANIMAL FOOD ARRAY DECLARATIONS//
 	var dogFood = [];
@@ -33,4 +33,4 @@ var petFood = function(object) {
 	return object;	
 
 //INVOKES FUNCTION WITH EMPTY OBJECT IF LIST MUSIC HAS NOT YET INITIALIZED//
-}(petFood || {});
+})(petFood || {});
