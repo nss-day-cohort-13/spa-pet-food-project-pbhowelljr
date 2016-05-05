@@ -23,15 +23,17 @@ var petFood = function(object) {
 			};
 
 			//ADDS FOOD TYPE TITLES//
-			for (var c = 0; c < array[i].types.length; c++) {
+			var types = array[i].types
+			for (var c = 0; c < types.length; c++) {
 				content += '<ul class="foodType">';
-				content += `<li><h3>${array[i].types[c].type}</h3></li>`;
+				content += `<li><h3>${types[c].type}</h3></li>`;
 
 				//ADDS PRICES AND QUANTITIES//
-				for (var p = 0; p < array[i].types[c].volumes.length; p++) {
+				var volumes = array[i].types[c].volumes
+				for (var p = 0; p < volumes.length; p++) {
 					content += '<ul class="volumesPrices">'
-					content += `<li><h4>${array[i].types[c].volumes[p].name}</h4></li>`;
-					content += `<li>$${array[i].types[c].volumes[p].price}</li>`;
+					content += `<li><h4>${volumes[p].name}</h4></li>`;
+					content += `<li>$${volumes[p].price}</li>`;
 					content += '</ul>'
 				}
 				content += '</ul>'
