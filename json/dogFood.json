@@ -1,10 +1,10 @@
 {
-  "dog_brands": [
+  "dogBrands": [
     {
       "name": "Chuck wagon",
       "types": [
         {
-          "type": "all_natural",
+          "type": "all natural",
           "volumes": [
             {
               "name": "32oz",

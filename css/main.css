@@ -1,0 +1,75 @@
+/**************\
+ General Styles
+\**************/
+* {
+	box-sizing: border-box;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-width: 500px;
+}
+
+/******\
+ HEADER
+\******/
+#header	{
+	border: 1px solid black;
+	margin: 2.5% 5%;
+	background-color: darkseagreen;
+}
+
+#header h1 {
+	float: left;
+	width: 50%;
+	margin-left: 5%;
+}
+
+#nav li {
+	display: inline-block;
+	width: 20%;
+	margin: 9px 0;
+	text-align: right;
+}
+
+#blank {
+	clear: both;
+}
+
+/******************\
+ PRODUCTS LIST INFO
+\******************/
+.foodAnimal {
+	border: 1px solid black;
+	margin: 2.5% 5%;
+	background-color: mediumseagreen;
+}
+
+.foodAnimal li {
+	margin: 2.5% 10% 0;
+}
+
+.foodBrand {
+	display: inline-block;
+	width: 90%;
+	margin: 0 0 5% 5%;
+}
+
+.foodBrand h2 {
+	margin: 0;
+}
+
+.foodType {
+	display: inline-block;
+	width: 32.5%;
+	margin-left: 10%;
+}
+
+.volumesPrices li{
+	display: inline-block;
+	width: 15%;
+	margin-left: 5%;
+	padding: 0;
+}
