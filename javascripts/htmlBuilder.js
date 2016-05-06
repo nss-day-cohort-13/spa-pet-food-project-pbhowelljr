@@ -9,7 +9,7 @@ var petFood = (function(object) {
 	object.htmlBuilder = function(array, foodAnimal) {
 
 		//ADDS FOOD ANIMAL HEADER//
-		content = `<ul class="foodAnimal">`
+		content = `<ul class="foodAnimal">`;
 		content += `<li><h1>${foodAnimal.toUpperCase()}</h1></li>`;
 
 		//ADDS BRAND NAME//
@@ -31,16 +31,16 @@ var petFood = (function(object) {
 				//ADDS PRICES AND QUANTITIES//
 				var volumes = array[i].types[c].volumes
 				for (var p = 0; p < volumes.length; p++) {
-					content += '<ul class="volumesPrices">'
+					content += '<ul class="volumesPrices">';
 					content += `<li><h4>${volumes[p].name}</h4></li>`;
 					content += `<li>$${volumes[p].price}</li>`;
-					content += '</ul>'
-				}
-				content += '</ul>'
+					content += '</ul>';
+				};
+				content += '</ul>';
 			};
-			content += '</ul>'
+			content += '</ul>';
 		};
-		content += '</ul>'
+		content += '</ul>';
 
 		//WRITES CONTENT TO DOM//
 		mainContent.innerHTML += content;
@@ -49,5 +49,5 @@ var petFood = (function(object) {
 	//RETURNS OBJECT WITH NEW METHOD ATTACHED//	
 	return object;	
 
-//INVOKES FUNCTION WITH EMPTY OBJECT IF LIST MUSIC HAS NOT YET INITIALIZED//
+//INVOKES FUNCTION WITH EMPTY OBJECT IF PET FOOD HAS NOT YET INITIALIZED//
 })(petFood || {});

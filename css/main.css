@@ -21,8 +21,7 @@ body {
 	background-color: darkseagreen;
 }
 
-#header li {
-	/* display: inline-block; */
+#header h1 {
 	float: left;
 	width: 50%;
 	margin-left: 5%;
